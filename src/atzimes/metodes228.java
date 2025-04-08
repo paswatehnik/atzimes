@@ -13,8 +13,19 @@ public class metodes228 {
 		}
 		studSk = scan.nextInt();
 	} while(studSk<1);
-	String[] studenti = new String[studSk];
-	}
+}	
+
 	
+	public static void krtSK(int kritSk) {
+	do {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Kads bus kriteriju skaits?");
+		while(!scan.hasNextInt()) {
+			System.out.println("Kads bus kriteriju skaits?");
+			scan.next();
+		}
+		kritSk=scan.nextInt();
+	} while(kritSk<1);
+}
 	
 }
